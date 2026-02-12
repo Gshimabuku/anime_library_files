@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品追加・編集 - アニメ管理システム</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="header-content">
+            <a href="../index.html" class="logo">🎬 アニメ管理システム</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">ホーム</a></li>
+                    <li><a href="../members/list.html">メンバー</a></li>
+                    <li><a href="list.html" class="active">作品</a></li>
+                    <li><a href="../platforms/list.html">配信プラットフォーム</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="main-content">
+        <h1 class="page-title">作品追加・編集</h1>
+
+        <div class="form-container">
+            <form>
+                <div class="form-group">
+                    <label class="form-label" for="title">作品名 <span style="color: #e74c3c;">*</span></label>
+                    <input type="text" id="title" class="form-control" placeholder="例：冒険者たちの物語" value="冒険者たちの物語">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="series_count">シリーズ数</label>
+                    <input type="number" id="series_count" class="form-control" placeholder="例：2" value="2" min="1">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="episodes">話数</label>
+                    <input type="number" id="episodes" class="form-control" placeholder="例：24" value="24" min="1">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="is_movie_only">映画のみ作品</label>
+                    <select id="is_movie_only" class="form-control">
+                        <option value="0" selected>なし</option>
+                        <option value="1">映画</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">配信プラットフォーム</label>
+                    <div class="checkbox-group vertical">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="platform" value="netflix" checked> Netflix
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="platform" value="amazon" checked> Amazon Prime Video
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="platform" value="unext" checked> U-NEXT
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="platform" value="hulu"> Hulu
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="platform" value="disney"> Disney+
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="platform" value="fod" checked> FOD
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="platform" value="telasa"> TELASA
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="platform" value="lemino"> Lemino
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-success">保存</button>
+                    <a href="list.html" class="btn btn-secondary">キャンセル</a>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品一覧 - アニメ管理システム</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="header-content">
+            <a href="../index.html" class="logo">🎬 アニメ管理システム</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">ホーム</a></li>
+                    <li><a href="../members/list.html">メンバー</a></li>
+                    <li><a href="list.html" class="active">作品</a></li>
+                    <li><a href="../platforms/list.html">配信プラットフォーム</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="main-content">
+        <h1 class="page-title">作品一覧</h1>
+
+        <!-- アクションバー -->
+        <div class="action-bar">
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="作品名で検索...">
+                <div class="checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" checked> シリーズ作品
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" checked> シリーズ+映画
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" checked> 映画
+                    </label>
+                </div>
+                <button class="btn btn-secondary">検索</button>
+            </div>
+            <a href="edit.html" class="btn btn-primary">+ 新規追加</a>
+        </div>
+
+        <!-- 作品テーブル -->
+        <div class="table-container">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>作品名</th>
+                        <th>シリーズ数</th>
+                        <th>話数</th>
+                        <th>タイプ</th>
+                        <th>総視聴時間</th>
+                        <th>配信</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="clickable-row" onclick="location.href='detail_series_movie.html'">
+                        <td>W001</td>
+                        <td>冒険者たちの物語</td>
+                        <td>2 + 映画2</td>
+                        <td>24</td>
+                        <td><span class="badge badge-pending">シリーズ+映画</span></td>
+                        <td>13時間30分</td>
+                        <td>
+                            <div class="platform-icons">
+                                <img src="../../images/icon/netflix.png" alt="Netflix" title="Netflix">
+                                <img src="../../images/icon/amazon_prime_video.png" alt="Amazon" title="Amazon Prime Video">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="clickable-row" onclick="location.href='detail_series.html'">
+                        <td>W002</td>
+                        <td>魔法学園の日常</td>
+                        <td>3</td>
+                        <td>36</td>
+                        <td><span class="badge badge-active">シリーズのみ</span></td>
+                        <td>14時間24分</td>
+                        <td>
+                            <div class="platform-icons">
+                                <img src="../../images/icon/netflix.png" alt="Netflix" title="Netflix">
+                                <img src="../../images/icon/unext.png" alt="U-NEXT" title="U-NEXT">
+                                <img src="../../images/icon/hulu.png" alt="Hulu" title="Hulu">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="clickable-row" onclick="location.href='detail_series.html'">
+                        <td>W003</td>
+                        <td>青春グラフィティ</td>
+                        <td>3</td>
+                        <td>36</td>
+                        <td><span class="badge badge-active">シリーズのみ</span></td>
+                        <td>14時間24分</td>
+                        <td>
+                            <div class="platform-icons">
+                                <img src="../../images/icon/amazon_prime_video.png" alt="Amazon" title="Amazon Prime Video">
+                                <img src="../../images/icon/unext.png" alt="U-NEXT" title="U-NEXT">
+                                <img src="../../images/icon/disney_plus.png" alt="Disney+" title="Disney+">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="clickable-row" onclick="location.href='detail_series.html'">
+                        <td>W004</td>
+                        <td>魔法少女マジカル☆</td>
+                        <td>1</td>
+                        <td>26</td>
+                        <td><span class="badge badge-active">シリーズのみ</span></td>
+                        <td>10時間24分</td>
+                        <td>
+                            <div class="platform-icons">
+                                <img src="../../images/icon/netflix.png" alt="Netflix" title="Netflix">
+                                <img src="../../images/icon/amazon_prime_video.png" alt="Amazon" title="Amazon Prime Video">
+                                <img src="../../images/icon/hulu.png" alt="Hulu" title="Hulu">
+                                <img src="../../images/icon/disney_plus.png" alt="Disney+" title="Disney+">
+                                <img src="../../images/icon/fod.png" alt="FOD" title="FOD">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="clickable-row" onclick="location.href='detail_movie.html'">
+                        <td>W005</td>
+                        <td>星降る夜の物語シリーズ</td>
+                        <td>映画4</td>
+                        <td>-</td>
+                        <td><span class="badge badge-inactive">映画のみ</span></td>
+                        <td>7時間55分</td>
+                        <td>
+                            <div class="platform-icons">
+                                <img src="../../images/icon/netflix.png" alt="Netflix" title="Netflix">
+                                <img src="../../images/icon/disney_plus.png" alt="Disney+" title="Disney+">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="clickable-row" onclick="location.href='detail_series.html'">
+                        <td>W006</td>
+                        <td>ロボット大戦記</td>
+                        <td>4</td>
+                        <td>100</td>
+                        <td><span class="badge badge-active">シリーズのみ</span></td>
+                        <td>40時間00分</td>
+                        <td>
+                            <div class="platform-icons">
+                                <img src="../../images/icon/netflix.png" alt="Netflix" title="Netflix">
+                                <img src="../../images/icon/amazon_prime_video.png" alt="Amazon" title="Amazon Prime Video">
+                                <img src="../../images/icon/unext.png" alt="U-NEXT" title="U-NEXT">
+                                <img src="../../images/icon/telasa.png" alt="TELASA" title="TELASA">
+                                <img src="../../images/icon/lemino.png" alt="Lemino" title="Lemino">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

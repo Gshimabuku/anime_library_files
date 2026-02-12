@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>メンバー一覧 - アニメ管理システム</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="header-content">
+            <a href="../index.html" class="logo">🎬 アニメ管理システム</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">ホーム</a></li>
+                    <li><a href="list.html" class="active">メンバー</a></li>
+                    <li><a href="../works/list.html">作品</a></li>
+                    <li><a href="../platforms/list.html">配信プラットフォーム</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="main-content">
+        <h1 class="page-title">メンバー一覧</h1>
+
+        <!-- アクションバー -->
+        <div class="action-bar">
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="名前・役職で検索...">
+                <button class="btn btn-secondary">検索</button>
+            </div>
+            <a href="edit.html" class="btn btn-primary">+ 新規追加</a>
+        </div>
+
+        <!-- メンバーテーブル -->
+        <div class="table-container">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>名前</th>
+                        <th>アクティブ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="clickable-row" onclick="location.href='detail.html'">
+                        <td>001</td>
+                        <td>山田太郎</td>
+                        <td><span class="badge badge-active">有効</span></td>
+                    </tr>
+                    <tr class="clickable-row" onclick="location.href='detail.html'">
+                        <td>002</td>
+                        <td>鈴木花子</td>
+                        <td><span class="badge badge-active">有効</span></td>
+                    </tr>
+                    <tr class="clickable-row" onclick="location.href='detail.html'">
+                        <td>003</td>
+                        <td>佐藤次郎</td>
+                        <td><span class="badge badge-active">有効</span></td>
+                    </tr>
+                    <tr class="clickable-row" onclick="location.href='detail.html'">
+                        <td>004</td>
+                        <td>田中三郎</td>
+                        <td><span class="badge badge-inactive">無効</span></td>
+                    </tr>
+                    <tr class="clickable-row" onclick="location.href='detail.html'">
+                        <td>005</td>
+                        <td>高橋美咲</td>
+                        <td><span class="badge badge-active">有効</span></td>
+                    </tr>
+                    <tr class="clickable-row" onclick="location.href='detail.html'">
+                        <td>006</td>
+                        <td>伊藤健一</td>
+                        <td><span class="badge badge-active">有効</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

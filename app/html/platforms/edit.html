@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>配信プラットフォーム追加・編集 - アニメ管理システム</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="header-content">
+            <a href="../index.html" class="logo">🎬 アニメ管理システム</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">ホーム</a></li>
+                    <li><a href="../members/list.html">メンバー</a></li>
+                    <li><a href="../works/list.html">作品</a></li>
+                    <li><a href="list.html" class="active">配信プラットフォーム</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="main-content">
+        <h1 class="page-title">配信プラットフォーム追加・編集</h1>
+
+        <div class="form-container">
+            <form>
+                <div class="form-group">
+                    <label class="form-label" for="name">プラットフォーム名 <span style="color: #e74c3c;">*</span></label>
+                    <input type="text" id="name" class="form-control" placeholder="例：Netflix" value="Netflix">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="type">種別 <span style="color: #e74c3c;">*</span></label>
+                    <select id="type" class="form-control">
+                        <option value="">選択してください</option>
+                        <option value="subscription" selected>サブスクリプション</option>
+                        <option value="free">無料</option>
+                        <option value="pay_per_view">課金（都度払い）</option>
+                        <option value="hybrid">サブスクリプション / 課金</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="price">月額料金</label>
+                    <input type="text" id="price" class="form-control" placeholder="例：790円〜1,980円" value="790円〜1,980円">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="status">ステータス</label>
+                    <select id="status" class="form-control">
+                        <option value="active" selected>有効</option>
+                        <option value="inactive">停止中</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="website">公式サイトURL</label>
+                    <input type="url" id="website" class="form-control" placeholder="例：https://www.netflix.com" value="https://www.netflix.com">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="devices">対応デバイス</label>
+                    <input type="text" id="devices" class="form-control" placeholder="例：PC、スマートフォン、タブレット" value="PC、スマートフォン、タブレット、スマートTV、ゲーム機">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="features">特徴</label>
+                    <textarea id="features" class="form-control" placeholder="プラットフォームの特徴を入力">・オリジナルアニメ作品の独占配信
+・高画質（4K HDR対応）
+・複数プロファイル対応
+・ダウンロード視聴可能</textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="notes">備考</label>
+                    <textarea id="notes" class="form-control" placeholder="メモや補足情報を入力">世界最大級の動画配信サービス。アニメコンテンツにも力を入れている。</textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-success">保存</button>
+                    <a href="list.html" class="btn btn-secondary">キャンセル</a>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

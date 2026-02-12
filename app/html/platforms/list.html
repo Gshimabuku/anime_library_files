@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>配信プラットフォーム一覧 - アニメ管理システム</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="header-content">
+            <a href="../index.html" class="logo">🎬 アニメ管理システム</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">ホーム</a></li>
+                    <li><a href="../members/list.html">メンバー</a></li>
+                    <li><a href="../works/list.html">作品</a></li>
+                    <li><a href="list.html" class="active">配信プラットフォーム</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="main-content">
+        <h1 class="page-title">配信プラットフォーム一覧</h1>
+
+        <!-- アクションバー -->
+        <div class="action-bar">
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="プラットフォーム名で検索...">
+                <button class="btn btn-secondary">検索</button>
+            </div>
+            <a href="edit.html" class="btn btn-primary">+ 新規追加</a>
+        </div>
+
+        <!-- プラットフォームテーブル -->
+        <div class="table-container">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>プラットフォーム名</th>
+                        <th>種別</th>
+                        <th>配信作品数</th>
+                        <th>ステータス</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="clickable-row" onclick="location.href='detail.html'">
+                        <td>P001</td>
+                        <td>Netflix</td>
+                        <td>サブスクリプション</td>
+                        <td>85作品</td>
+                        <td><span class="badge badge-active">有効</span></td>
+                    </tr>
+                    <tr class="clickable-row" onclick="location.href='detail.html'">
+                        <td>P002</td>
+                        <td>Amazon Prime Video</td>
+                        <td>サブスクリプション</td>
+                        <td>120作品</td>
+                        <td><span class="badge badge-active">有効</span></td>
+                    </tr>
+                    <tr class="clickable-row" onclick="location.href='detail.html'">
+                        <td>P003</td>
+                        <td>dアニメストア</td>
+                        <td>サブスクリプション</td>
+                        <td>200作品</td>
+                        <td><span class="badge badge-active">有効</span></td>
+                    </tr>
+                    <tr class="clickable-row" onclick="location.href='detail.html'">
+                        <td>P004</td>
+                        <td>Crunchyroll</td>
+                        <td>サブスクリプション</td>
+                        <td>150作品</td>
+                        <td><span class="badge badge-active">有効</span></td>
+                    </tr>
+                    <tr class="clickable-row" onclick="location.href='detail.html'">
+                        <td>P005</td>
+                        <td>ABEMA</td>
+                        <td>サブスクリプション / 無料</td>
+                        <td>95作品</td>
+                        <td><span class="badge badge-active">有効</span></td>
+                    </tr>
+                    <tr class="clickable-row" onclick="location.href='detail.html'">
+                        <td>P006</td>
+                        <td>Disney+</td>
+                        <td>サブスクリプション</td>
+                        <td>30作品</td>
+                        <td><span class="badge badge-active">有効</span></td>
+                    </tr>
+                    <tr class="clickable-row" onclick="location.href='detail.html'">
+                        <td>P007</td>
+                        <td>Hulu</td>
+                        <td>サブスクリプション</td>
+                        <td>60作品</td>
+                        <td><span class="badge badge-active">有効</span></td>
+                    </tr>
+                    <tr class="clickable-row" onclick="location.href='detail.html'">
+                        <td>P008</td>
+                        <td>バンダイチャンネル</td>
+                        <td>サブスクリプション / 課金</td>
+                        <td>180作品</td>
+                        <td><span class="badge badge-inactive">停止中</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

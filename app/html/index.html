@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アニメ管理システム - ホーム</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="header-content">
+            <a href="index.html" class="logo">🎬 アニメ管理システム</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">ホーム</a></li>
+                    <li><a href="members/list.html">メンバー</a></li>
+                    <li><a href="works/list.html">作品</a></li>
+                    <li><a href="platforms/list.html">配信プラットフォーム</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="main-content">
+        <h1 class="page-title">ダッシュボード</h1>
+
+        <!-- 統計カード -->
+        <div class="dashboard-stats">
+            <div class="stat-card">
+                <div class="stat-number">24</div>
+                <div class="stat-label">メンバー数</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">156</div>
+                <div class="stat-label">作品数</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">8</div>
+                <div class="stat-label">配信プラットフォーム</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">42</div>
+                <div class="stat-label">今月の更新</div>
+            </div>
+        </div>
+
+        <!-- クイックアクセス -->
+        <h2 class="page-title" style="font-size: 1.4rem;">クイックアクセス</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3 class="card-title">メンバー管理</h3>
+                <p class="card-text">スタッフ・キャストなどのメンバー情報を管理します。</p>
+                <a href="members/list.html" class="card-link">一覧を見る →</a>
+            </div>
+            <div class="card">
+                <h3 class="card-title">作品管理</h3>
+                <p class="card-text">アニメ作品の情報を登録・編集します。</p>
+                <a href="works/list.html" class="card-link">一覧を見る →</a>
+            </div>
+            <div class="card">
+                <h3 class="card-title">配信プラットフォーム</h3>
+                <p class="card-text">配信サービスの情報を管理します。</p>
+                <a href="platforms/list.html" class="card-link">一覧を見る →</a>
+            </div>
+        </div>
+
+        <!-- 最近の更新 -->
+        <h2 class="page-title mt-20" style="font-size: 1.4rem;">最近の更新</h2>
+        <div class="table-container">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>日時</th>
+                        <th>種別</th>
+                        <th>内容</th>
+                        <th>更新者</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2026/02/12 14:30</td>
+                        <td><span class="badge badge-active">作品</span></td>
+                        <td>「新作アニメA」を追加</td>
+                        <td>山田太郎</td>
+                    </tr>
+                    <tr>
+                        <td>2026/02/12 11:15</td>
+                        <td><span class="badge badge-pending">メンバー</span></td>
+                        <td>「鈴木花子」の情報を更新</td>
+                        <td>佐藤次郎</td>
+                    </tr>
+                    <tr>
+                        <td>2026/02/11 16:45</td>
+                        <td><span class="badge badge-inactive">プラットフォーム</span></td>
+                        <td>「Netflix」の配信情報を更新</td>
+                        <td>田中三郎</td>
+                    </tr>
+                    <tr>
+                        <td>2026/02/11 10:00</td>
+                        <td><span class="badge badge-active">作品</span></td>
+                        <td>「人気アニメB」のキャスト情報を更新</td>
+                        <td>山田太郎</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
